@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+    <link rel="icon" type="image/svg+xml" href="../img/logo_test2.svg">
+    <link rel="alternate icon" href="../img/logo_test2.svg">
+    <link rel="apple-touch-icon" href="../img/logo_test2.svg">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="fixed-bg">
+        <canvas></canvas>
+    </div>
+
+    <audio id="snow-sound" loop>
+        <source src="../sound/snowstorn-in-the-mountains-moderate-ivo-vicic-1-01-33.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="fireworks-sound" loop>
+        <source src="../sound/fireworks-18047.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="sound-toggle" class="sound-toggle" aria-label="Turn sound on/off">🔇</button>
+
+    <div class="countdown-container">
+        <div class="countdown-title">Until New Year</div>
+
+        <div class="countdown-timer">
+            <div class="time-unit">
+                <span class="time-value" id="days">00</span>
+                <span class="time-label">Days</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-unit">
+                <span class="time-value" id="hours">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-unit">
+                <span class="time-value" id="minutes">00</span>
+                <span class="time-label">Minutes</span>
+            </div>
+
+            <div class="time-separator">:</div>
+
+            <div class="time-unit">
+                <span class="time-value" id="seconds">00</span>
+                <span class="time-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
